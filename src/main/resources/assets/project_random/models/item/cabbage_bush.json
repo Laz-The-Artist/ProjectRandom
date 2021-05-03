@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "project_random:block/cabbage_bush_stage3"
+  }
+}

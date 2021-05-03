@@ -1,7 +1,14 @@
 package multiteam.project_random;
 
+import multiteam.multicore_lib.setup.utilities.ItemGroupTool;
 import multiteam.project_random.main.Registration;
+import multiteam.project_random.main.block.ModBlocks;
+import multiteam.project_random.main.item.ModItems;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -24,6 +31,11 @@ public class ProjectRandom
     public static final String MOD_ID = "project_random";
     private static final Logger LOGGER = LogManager.getLogger();
 
+    public static final ItemGroupTool PROJECTRANDOM_EAGLE = new ItemGroupTool("eagles_trashland", () -> new ItemStack(Blocks.CHEST.asItem()));
+    public static final ItemGroupTool PROJECTRANDOM_LAZ = new ItemGroupTool("lazlos_forest", () -> new ItemStack(ModItems.CABBAGE.get()));
+    public static final ItemGroupTool PROJECTRANDOM_GAMA = new ItemGroupTool("gamas_smithery", () -> new ItemStack(Blocks.CHEST.asItem()));
+
+
     public ProjectRandom() {
 
         GeckoLib.initialize();
@@ -43,7 +55,7 @@ public class ProjectRandom
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
-
+        RenderTypeLookup.setRenderLayer(ModBlocks.CABBAGE_BUSH.get(), RenderType.cutoutMipped());
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event) {

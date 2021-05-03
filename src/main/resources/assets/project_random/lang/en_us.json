@@ -1,0 +1,12 @@
+{
+    "BLOCKS":"MOD BLOCKS",
+    "block.project_random.cabbage_bush":"Cabbage Bush",
+
+    "ITEMS":"MOD ITEMS",
+    "item.project_random.cabbage":"Cabbage",
+
+    "MISC":"MOD MISC",
+    "itemGroup.eagles_trashland":"Eagle's Trashland",
+    "itemGroup.lazlos_forest":"Lazlo's Forest",
+    "itemGroup.gamas_smithery":"Gama's Smithery"
+}
