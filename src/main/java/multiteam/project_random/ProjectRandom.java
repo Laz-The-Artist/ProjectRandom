@@ -1,5 +1,6 @@
 package multiteam.project_random;
 
+import multiteam.project_random.main.Registration;
 import net.minecraft.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -13,8 +14,8 @@ import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import software.bernie.geckolib3.GeckoLib;
 
-import java.util.stream.Collectors;
 
 @Mod(ProjectRandom.MOD_ID)
 public class ProjectRandom
@@ -24,6 +25,9 @@ public class ProjectRandom
     private static final Logger LOGGER = LogManager.getLogger();
 
     public ProjectRandom() {
+
+        GeckoLib.initialize();
+        Registration.register();
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
