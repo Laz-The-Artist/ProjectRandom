@@ -28,7 +28,6 @@ import software.bernie.geckolib3.GeckoLib;
 public class ProjectRandom
 {
 
-    
     public static final String MOD_ID = "project_random";
     private static final Logger LOGGER = LogManager.getLogger();
 

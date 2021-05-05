@@ -3,6 +3,7 @@ package multiteam.project_random.data;
 import multiteam.project_random.ProjectRandom;
 import multiteam.project_random.data.client.ModBlockStateProvider;
 import multiteam.project_random.data.client.ModItemModelProvider;
+import multiteam.project_random.data.client.ModLootTableProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -20,5 +21,6 @@ public class DataGenerators {
 
         gen.addProvider(new ModBlockStateProvider(gen, existingFileHelper));
         gen.addProvider(new ModItemModelProvider(gen, existingFileHelper));
+        gen.addProvider(new ModLootTableProvider(gen));
     }
 }
