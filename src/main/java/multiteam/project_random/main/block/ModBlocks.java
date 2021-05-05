@@ -17,7 +17,10 @@ import java.util.function.Supplier;
 public class ModBlocks {
 
     public static final RegistryObject<Block> CABBAGE_BUSH = registerWithItem("cabbage_bush", () -> new CabbageBush(AbstractBlock.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(2.0f, 6.0f).noCollission().harvestTool(ToolType.HOE).dynamicShape()), new Item.Properties().tab(ProjectRandom.PROJECTRANDOM_LAZ).rarity(Rarity.UNCOMMON));
-
+    public static final RegistryObject<Block> CARDBOARD_BOX = registerWithItem("cardboard_box", () -> new Block(AbstractBlock.Properties.of(Material.WOOL).sound(SoundType.LADDER).strength(0.0f, 0.0f).dynamicShape()), new Item.Properties().tab(ProjectRandom.PROJECTRANDOM_LAZ));
+    public static final RegistryObject<Block> SUPER_CABBAGE = registerWithItem("super_cabbage", () -> new CabbageBlock(AbstractBlock.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(0.0f, 0.0f).dynamicShape()), new Item.Properties().tab(ProjectRandom.PROJECTRANDOM_EAGLE));
+    public static final RegistryObject<Block> ICEY_CABBAGE = registerWithItem("icey_cabbage", () -> new CabbageBlock(AbstractBlock.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(0.0f, 0.0f).dynamicShape()), new Item.Properties().tab(ProjectRandom.PROJECTRANDOM_EAGLE));
+    public static final RegistryObject<Block> WITHER_CABBAGE = registerWithItem("wither_cabbage", () -> new CabbageBlock(AbstractBlock.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(0.0f, 0.0f).dynamicShape()), new Item.Properties().tab(ProjectRandom.PROJECTRANDOM_EAGLE));
 
     public static void register(){}
 

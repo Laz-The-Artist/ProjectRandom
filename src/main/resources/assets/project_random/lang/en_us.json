@@ -1,6 +1,10 @@
 {
     "BLOCKS":"MOD BLOCKS",
     "block.project_random.cabbage_bush":"Cabbage Bush",
+    "block.project_random.cardboard_box":"Cardboard Box",
+    "block.project_random.super_cabbage":"Super Cabbage",
+    "block.project_random.icey_cabbage":"Icey Cabbage",
+    "block.project_random.wither_cabbage":"Wither Cabbage",
 
     "ITEMS":"MOD ITEMS",
     "item.project_random.cabbage":"Cabbage",

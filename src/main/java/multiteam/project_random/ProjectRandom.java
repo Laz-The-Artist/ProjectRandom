@@ -31,8 +31,8 @@ public class ProjectRandom
     public static final String MOD_ID = "project_random";
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public static final ItemGroupTool PROJECTRANDOM_EAGLE = new ItemGroupTool("eagles_trashland", () -> new ItemStack(Blocks.CHEST.asItem()));
-    public static final ItemGroupTool PROJECTRANDOM_LAZ = new ItemGroupTool("lazlos_forest", () -> new ItemStack(ModItems.CABBAGE.get()));
+    public static final ItemGroupTool PROJECTRANDOM_EAGLE = new ItemGroupTool("eagles_trashland", () -> new ItemStack(ModBlocks.WITHER_CABBAGE.get()));
+    public static final ItemGroupTool PROJECTRANDOM_LAZ = new ItemGroupTool("lazlos_forest", () -> new ItemStack(ModBlocks.CARDBOARD_BOX.get()));
     public static final ItemGroupTool PROJECTRANDOM_GAMA = new ItemGroupTool("gamas_smithery", () -> new ItemStack(Blocks.CHEST.asItem()));
 
 
@@ -56,6 +56,10 @@ public class ProjectRandom
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         RenderTypeLookup.setRenderLayer(ModBlocks.CABBAGE_BUSH.get(), RenderType.cutoutMipped());
+
+        RenderTypeLookup.setRenderLayer(ModBlocks.SUPER_CABBAGE.get(), RenderType.cutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.ICEY_CABBAGE.get(), RenderType.cutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.WITHER_CABBAGE.get(), RenderType.cutoutMipped());
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event) {
