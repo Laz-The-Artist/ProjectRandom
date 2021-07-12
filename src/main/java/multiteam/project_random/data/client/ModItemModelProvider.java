@@ -26,6 +26,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated, "cabbage");
         builder(itemGenerated, "cardboard_sheet");
         builder(itemGenerated, "glue_ball");
+        builder(itemGenerated, "clay_soldier_item");
 
     }
 

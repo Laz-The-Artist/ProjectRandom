@@ -12,6 +12,8 @@ public class ModItems {
     public static final RegistryObject<Item> CARDBOARD_SHEET = Registration.ITEMS.register("cardboard_sheet", () -> new Item(new Item.Properties().tab(ProjectRandom.PROJECTRANDOM_LAZ)));
     public static final RegistryObject<Item> GLUE_BALL = Registration.ITEMS.register("glue_ball", () -> new Item(new Item.Properties().tab(ProjectRandom.PROJECTRANDOM_LAZ)));
 
+    public static final RegistryObject<Item> CLAY_SOLDIER_ITEM = Registration.ITEMS.register("clay_soldier_item", () -> new ClaySoldierItem(new Item.Properties().tab(ProjectRandom.PROJECTRANDOM_LAZ)));
+
 
     public static void register(){}
 }

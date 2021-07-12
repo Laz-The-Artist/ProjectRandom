@@ -3,6 +3,7 @@ package multiteam.project_random;
 import multiteam.multicore_lib.setup.utilities.ItemGroupTool;
 import multiteam.project_random.main.Registration;
 import multiteam.project_random.main.block.ModBlocks;
+import multiteam.project_random.main.entity.ModEntities;
 import multiteam.project_random.main.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -45,13 +46,14 @@ public class ProjectRandom
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(ModEntities::clientSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
 
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-
+        ModEntities.applyAttributes();
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
