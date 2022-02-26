@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "project_random:block/cabbage_bush_stage2"
-  }
-}
